@@ -74,7 +74,7 @@ function stop(){
 
 function student() {
     var stu_obj = [
-        { name: 'aakash', r_num: '777', dob: '06-feb-2002' },
+        { name: 'aakash', r_num: '777', dob: '06-feb-1996' },
         { name: 'kumar', r_num: '999', dob: '18-apr-2002' },
         
     ];
@@ -84,7 +84,17 @@ function student() {
         var r = stu_obj[i].r_num;
         var d = stu_obj[i].dob;
         var str = "<br>" + "Name: " + n + "<br>" + "Register Number: " + r + "<br>" + "Date Of Birth: " + d + "<br>";
+        document.getElementById('les').innerHTML="year less then 2000";
         document.getElementById('stu' + (i + 1)).innerHTML = str;
 
     }
-}
+    for (var i = 0; i < stu_obj.length; i++) {
+        var n = stu_obj[i].name;
+        var r = stu_obj[i].r_num;
+        var d = stu_obj[i].dob;
+        var str = "<br>" + "Name: " + n + "<br>" + "Register Number: " + r + "<br>" + "Date Of Birth: " + d + "<br>";
+         document.getElementById('gre').innerHTML="year greater then 2000";
+        document.getElementById('stu' + (i + 1)).innerHTML = str;
+
+    }
+}    
