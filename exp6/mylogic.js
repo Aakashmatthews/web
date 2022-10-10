@@ -76,7 +76,7 @@ function student() {
     var stu_obj = [
         { name: 'aakash', r_num: '777', dob: '06-feb-2002' },
         { name: 'kumar', r_num: '999', dob: '18-apr-1999' },
-        { aakash > kumar. Difference between them is 3years}
+        { aakash > kumar. Difference between them is 3years!}
     ];
 
     for (var i = 0; i < stu_obj.length; i++) {
